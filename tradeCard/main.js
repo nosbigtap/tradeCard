@@ -29,13 +29,12 @@ function galleryController(nerdBinder) {
 
 }
 
-
 function binderFactory() {
 console.info("binder working")
 
     var cardBinder = [];
 
-return {
-     cardBinder: cardBinder
-}
+  return {
+       cardBinder: cardBinder
+  }
 }

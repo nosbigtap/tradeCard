@@ -11,9 +11,13 @@
 
 <body>
     <h1>Welcome to the Magical Card Emporium</h1>
+
     <hr>
+
     <h3>Add New Cards to the Binder</h3>
+
     <hr>
+
     <form ng-controller="Card as cCtrl" ng-submit="cCtrl.newCard()">
         <input type="text" placeholder="NAME" ng-model="cCtrl.card.name"/>
         <select ng-model="cCtrl.card.manaColor">
@@ -27,7 +31,9 @@
         <input type="text" placeholder="GIF" ng-model="cCtrl.card.art"/>
         <button type="submit">Add Card</button>
     </form>
+
     <hr>
+    
     <ul>
         <section ng-controller="Gallery as gCtrl">
             <h1>Card Gallery</h1>
@@ -41,9 +47,6 @@
         </section>
     </ul>
 
-
 </body>
-
-
 
 </html>
